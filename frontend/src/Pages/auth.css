@@ -1,0 +1,44 @@
+.auth-bg {
+  background: radial-gradient(circle at top, #061a2f, #020b18);
+}
+
+.auth-card {
+  background: rgba(10, 25, 47, 0.95);
+  border-radius: 16px;
+  color: #fff;
+  animation: fadeIn 0.8s ease;
+}
+
+.neon-text {
+  color: #4fd1ff;
+  text-shadow: 0 0 8px rgba(79, 209, 255, 0.8);
+}
+
+.neon-btn {
+  background: linear-gradient(135deg, #00eaff, #0066ff);
+  border: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.neon-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(0, 234, 255, 0.8);
+}
+
+.modal-dark {
+  background-color: #081c32;
+  color: #fff;
+  border: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,88 @@
+.admin-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #050b18, #0b1c2d);
+  color: white;
+}
+
+.admin-sidebar {
+  background: #060d1f;
+  min-height: 100vh;
+  padding: 20px;
+  border-right: 1px solid rgba(0,255,255,0.2);
+}
+
+.admin-link {
+  display: block;
+  padding: 12px;
+  margin-bottom: 10px;
+  color: #9adfff;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.admin-link:hover,
+.admin-link.active {
+  background: rgba(0,255,255,0.15);
+  color: #00ffff;
+}
+
+.admin-topbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.admin-card {
+  background: #0b1220;
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid rgba(0,255,255,0.15);
+  transition: 0.3s;
+}
+
+.admin-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px rgba(0,255,255,0.25);
+}
+
+.icon-box {
+  font-size: 40px;
+  color: #00ffff;
+  margin-bottom: 10px;
+}
+
+.neon-text {
+  color: #00ffff;
+  text-shadow: 0 0 10px rgba(0,255,255,0.8);
+}
+
+
+.mobile-header {
+  padding: 10px;
+  background: #060d1f;
+}
+
+.menu-btn {
+  border-radius: 10px;
+}
+
+.admin-sidebar-inner {
+  padding: 10px;
+}
+
+.dark-table {
+  background: #0b1220;
+  color: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.dark-table th {
+  background: #050b18;
+  color: #00ffff;
+}
+
+.dark-table td {
+  vertical-align: middle;
+}

@@ -1,0 +1,242 @@
+/* ===== BACKGROUND ===== */
+.user-bg {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #040275a9, #050b18);
+  color: white;
+}
+
+/* ===== LAYOUT ===== */
+.user-layout {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ===== SIDEBAR ===== */
+.user-sidebar {
+  width: 240px;
+  background: rgba(5,11,24,0.85);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+
+/* ===== CONTENT ===== */
+.user-content {
+  margin-left: 240px;
+  flex: 1;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+/* ===== LINKS ===== */
+.user-link {
+  display: block;
+  padding: 12px;
+  margin-bottom: 8px;
+  color: #9afcff;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.user-link.active,
+.user-link:hover {
+  background: rgba(0,255,255,0.15);
+  color: #fff;
+}
+
+/* ===== LOGOUT ===== */
+.logout-btn {
+  background: transparent;
+  border: 1px solid #0ff;
+  color: #0ff;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background: #0ff;
+  color: #000;
+}
+
+/* ===== GLASS CARDS ===== */
+.glass-card {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: 0.3s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.glass-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px rgba(0,255,255,0.3);
+}
+
+/* Fixed image area */
+.glass-card img {
+  height: 180px;
+  object-fit: contain;
+  border-radius: 16px 16px 0 0;
+}
+
+/* Card body equal height */
+.glass-card .card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+/* ===== TITLES ===== */
+.neon-text {
+  color: rgb(34, 0, 255);
+  text-shadow: 0 0 6px rgb(35, 4, 173);
+}
+
+.section-title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #3bf4f1;
+}
+
+/* ===== MOBILE SIDEBAR ===== */
+@media (max-width: 768px) {
+  .user-sidebar {
+    transform: translateX(-100%);
+    transition: 0.3s;
+  }
+
+  .user-sidebar.show {
+    transform: translateX(0);
+  }
+
+  .user-content {
+    margin-left: 0;
+  }
+}
+
+/* ===== SIDEBAR TOGGLE BUTTON ===== */
+.menu-btn {
+  background: transparent;
+  border: 1px solid #0ff;
+  color: #0ff;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+/* Close X inside sidebar */
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #0ff;
+}
+
+
+.dark-table {
+  background: rgba(255,255,255,0.05);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.dark-table thead {
+  background: rgba(0,255,255,0.15);
+  color: #0ff;
+}
+
+.dark-table th,
+.dark-table td {
+  color: white;
+  vertical-align: middle;
+}
+
+.booking-card-new {
+  background: #0b1220;
+  border-radius: 16px;
+  border: 1px solid rgba(0,255,255,0.15);
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.booking-card-new:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0,255,255,0.25);
+}
+
+/* IMAGE */
+.booking-img-wrapper {
+  position: relative;
+  height: 180px;
+  overflow: hidden;
+}
+
+.booking-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.booking-status {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 12px;
+}
+
+/* CONTENT */
+.booking-title {
+  color: #38bdf8;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.booking-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-bottom: 6px;
+  color: #cbd5e1;
+}
+
+.booking-row span {
+  opacity: 0.7;
+}
+
+
+.react-datepicker {
+  background: #b0df08;
+  color: white;
+  border: 1px solid cyan;
+}
+
+.react-datepicker__day--disabled {
+  color: #555 !important;
+  background: #111 !important;
+  text-decoration: line-through;
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .user-sidebar {
+    width: 200px;   /* was too wide */
+  }
+
+
+
+  .user-content {
+    padding: 16px;
+  }
+}
